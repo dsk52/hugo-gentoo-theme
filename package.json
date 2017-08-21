@@ -1,0 +1,36 @@
+{
+  "name": "coding-starter-kit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "sass": "gulp sass",
+    "js": "webpack --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Daisuke Konishi",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-newer": "^1.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
+    "path": "^0.12.7",
+    "preloadjs": "^0.0.0",
+    "require-dir": "^0.3.1",
+    "webpack": "^2.4.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "devDependencies": {}
+}
