@@ -1,9 +1,16 @@
 @charset "utf-8";
 
+/* Utility */
+@import "bourbon";
+
 /*! bulma.io v0.5.1 | MIT License | github.com/jgthms/bulma */
-@import "./vendor/bluma-0.5.1/utilities/*";
-@import "./vendor/bluma-0.5.1/base/*";
-@import "./vendor/bluma-0.5.1/elements/*";
-@import "./vendor/bluma-0.5.1/components/*";
-@import "./vendor/bluma-0.5.1/grid/*";
-@import "./vendor/bluma-0.5.1/layout/*";
+@import "vendor/bluma-0.5.1/utilities/_all";
+@import "vendor/bluma-0.5.1/base/_all";
+@import "vendor/bluma-0.5.1/elements/_all";
+@import "vendor/bluma-0.5.1/components/_all";
+@import "vendor/bluma-0.5.1/grid/_all";
+@import "vendor/bluma-0.5.1/layout/_all";
+
+/* User */
+@import "_variables";
+@import "components/*";

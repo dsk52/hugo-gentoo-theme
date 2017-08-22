@@ -1,0 +1,9 @@
+.gfooter {
+  padding: 14px 0;
+  background-color: $color-primary;
+  border-bottom: 3px solid $color-accent;
+
+  .copy {
+    color: $color-font-bg-black;
+  }
+}

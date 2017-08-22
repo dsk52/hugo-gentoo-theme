@@ -1,0 +1,12 @@
+.gheader {
+  background-color: $color-primary;
+  border-top: 3px solid $color-accent;
+
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar-item {
+    color: $color-font-bg-black;
+  }
+}
