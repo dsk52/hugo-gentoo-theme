@@ -51,6 +51,11 @@
     transition: 0.2s $ease-out-quart 0s;
     font-size: 14px;
 
+    &:hover {
+      transition: 0.2s $ease-out-quart 0s;
+      color: $color-accent;
+    }
+
     & + .tag-item {
       &:before {
         display: inline-block;

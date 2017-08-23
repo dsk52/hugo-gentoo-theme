@@ -1,0 +1,32 @@
+.pagination {
+  margin-top: 40px;
+}
+
+.pagination-list {
+  display: block;
+  text-align: center;
+
+  .pager {
+    width: 25%;
+    display: inline;
+
+    a {
+      color: $color-font-base;
+      transition: 0.2s $ease-out-quart 0s;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  .next {
+    text-align: right;
+    float: right;
+  }
+
+  .previous {
+    text-align: left;
+    float: left;
+  }
+}

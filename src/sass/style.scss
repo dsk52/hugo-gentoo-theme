@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* Utility */
-@import "bourbon";
-
 /*! bulma.io v0.5.1 | MIT License | github.com/jgthms/bulma */
 @import "vendor/bluma-0.5.1/utilities/_all";
 @import "vendor/bluma-0.5.1/base/_all";
@@ -14,6 +11,8 @@
 /* User */
 @import "foundation/_variables";
 @import "foundation/_base";
+@import "_placeholder";
+
 @import "_override";
 @import "components/*";
 @import "layouts/*";

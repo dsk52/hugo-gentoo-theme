@@ -1,8 +1,10 @@
 {{ define "main" }}
-  {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
+  {{ $pag := .Paginate (where .Data.Pages "Type" "post") 6 }}
   <div class="post-list">
     {{ range $pag.Pages }}
       {{ .Render "li" }}
     {{ end }}
   </div>
+
+  {{ partial "pagination" . }}
 {{ end }}
