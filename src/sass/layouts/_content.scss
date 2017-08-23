@@ -1,4 +1,8 @@
 .main-content {
-  background-color: $color-secondary;
-  padding: 60px 0;
+  margin: 60px 0;
+
+  .container {
+    max-width: $document-width;
+    width: 100%;
+  }
 }

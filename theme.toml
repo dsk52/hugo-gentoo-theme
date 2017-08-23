@@ -4,18 +4,21 @@
 name = "Hugo Gentoo Theme"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
+description = "It is the theme of Hugo. Created by imagining the Gentoo penguin."
 homepage = "http://siteforthistheme.com/"
-tags = []
-features = []
+tags = [simple, ]
+features = [Google Analytics]
 min_version = 0.19
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Daisuke Konishi"
+  homepage = "https://blog.daisukekonishi.com"
 
 # If porting an existing theme
 [original]
-  name = ""
+  name = "Gentoo"
   homepage = ""
   repo = ""
+
+[params]
+  dateformat = "Jan 2, 2006" # Optional

@@ -7063,15 +7063,64 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 /* User */
-.content {
-  padding: 60px 0; }
+body {
+  background-color: #eaeaea; }
+
+.navbar-item {
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+
+.post + .post {
+  margin-top: 40px; }
+
+.post .title {
+  margin-bottom: 0;
+  font-size: 1.8rem; }
+  .post .title a {
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    color: #363636; }
+    .post .title a:hover {
+      color: #d84817; }
+
+.meta {
+  margin-top: 8px; }
+  .meta .pub-time {
+    font-family: "Lato", sans-serif;
+    color: #8d8d8d; }
+
+.terms {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 10px; }
+  .terms > * {
+    display: inline-block; }
+
+.tag {
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent;
+  padding: 0; }
+  .tag .tag-item {
+    color: #2d2d2d;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    font-size: 14px; }
+    .tag .tag-item + .tag-item:before {
+      display: inline-block;
+      content: ',';
+      padding-right: 6px; }
+
+.main-content {
+  margin: 60px 0; }
+  .main-content .container {
+    max-width: 864px;
+    width: 100%; }
 
 .gfooter {
   padding: 14px 0;
   background-color: #2d2d2d;
   border-bottom: 3px solid #d84817; }
   .gfooter .copy {
-    color: #e5e5e5; }
+    color: #eaeaea; }
 
 .gheader {
   background-color: #2d2d2d;
@@ -7079,4 +7128,4 @@ label.panel-block {
   .gheader .navbar {
     background-color: transparent; }
   .gheader .navbar-item {
-    color: #e5e5e5; }
+    color: #eaeaea; }

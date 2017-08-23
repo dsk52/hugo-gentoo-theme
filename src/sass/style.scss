@@ -12,5 +12,8 @@
 @import "vendor/bluma-0.5.1/layout/_all";
 
 /* User */
-@import "_variables";
+@import "foundation/_variables";
+@import "foundation/_base";
+@import "_override";
 @import "components/*";
+@import "layouts/*";
