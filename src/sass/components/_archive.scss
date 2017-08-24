@@ -1,0 +1,18 @@
+.archive-header {
+  border-bottom: 1px solid darken($color-font-bg-black, 10%);
+  padding-bottom: 1rem;
+
+  .title {
+    margin-top: -4px;
+    font-size: 36px;
+    line-height: 1.6;
+  }
+
+  .title:not(:last-child) {  // override
+    margin-bottom: 0;
+  }
+}
+
+.archive-header + .archive-body {
+  margin-top: 3.5rem;
+}
