@@ -7068,6 +7068,12 @@ body {
 .navbar-item {
   transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
 
+.not-found-body {
+  margin-top: 1.8rem; }
+  .not-found-body a {
+    font-weight: 500;
+    color: #d84817; }
+
 .archive-header {
   border-bottom: 1px solid #d1d1d1;
   padding-bottom: 1rem; }
