@@ -7089,16 +7089,16 @@ body {
     text-align: left;
     float: left; }
 
-.post + .post {
+.post-item + .post-item {
   margin-top: 40px; }
 
-.post .title {
+.post-item .title {
   margin-bottom: 0;
   font-size: 1.8rem; }
-  .post .title a {
+  .post-item .title a {
     transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     color: #363636; }
-    .post .title a:hover {
+    .post-item .title a:hover {
       color: #d84817; }
 
 .meta {
@@ -7131,6 +7131,80 @@ body {
       display: inline-block;
       content: ',';
       padding-right: 6px; }
+
+.post-header {
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 1rem; }
+  .post-header .title {
+    margin-top: -4px;
+    font-size: 36px;
+    line-height: 1.6; }
+  .post-header .title:not(:last-child) {
+    margin-bottom: 0; }
+  .post-header .categories-item {
+    padding: 4px 8px;
+    background-color: #d84817;
+    color: #eaeaea;
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+    .post-header .categories-item:hover {
+      background-color: #eaeaea;
+      color: #d84817; }
+  .post-header .categories + .tag {
+    margin-left: 0.8em; }
+
+.post-body {
+  margin-top: 3.5rem; }
+  .post-body > * {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #4a4a4a; }
+  .post-body h2 {
+    margin-top: 1.8em;
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .post-body h3 {
+    margin-top: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 600; }
+  .post-body h4 {
+    margin-top: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 600; }
+  .post-body h5 {
+    margin-top: 1em;
+    font-size: 1rem;
+    font-weight: 600; }
+  .post-body h2 + p,
+  .post-body h3 + p,
+  .post-body h4 + p {
+    margin-top: 0.6em; }
+  .post-body p + p {
+    margin-top: 1.6em; }
+  .post-body ol,
+  .post-body ul {
+    margin: 1.4rem 0 1.4rem 2.4rem; }
+    .post-body ol ol,
+    .post-body ol ul,
+    .post-body ul ol,
+    .post-body ul ul {
+      margin: 1.4rem 0 1.4rem 2.4rem; }
+  .post-body ul {
+    list-style-type: disc; }
+  .post-body img {
+    margin: 1.2rem 0; }
+  .post-body blockquote {
+    border-left: 3px solid #363636;
+    padding-left: 2rem; }
+  .post-body pre {
+    background-color: #363636;
+    margin: 2.8em 0;
+    color: #eaeaea; }
+  .post-body code {
+    font-family: "Lato", sans-serif; }
+  .post-body a {
+    font-weight: 400;
+    color: #d84817; }
+    .post-body a:hover {
+      text-decoration: underline; }
 
 .main-content {
   margin: 60px 0; }
