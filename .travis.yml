@@ -14,5 +14,4 @@ branches:
     - develop
 
 script:
-  - ls -al
-
+  - ls -la
