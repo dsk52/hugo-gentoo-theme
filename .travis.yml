@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - "7"
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - develop
+
+script:
+  - ls -al
+
