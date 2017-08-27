@@ -7092,6 +7092,9 @@ body {
 .archive-header + .archive-body {
   margin-top: 3.5rem; }
 
+.comments {
+  margin-top: 30px; }
+
 .pagenation {
   margin-top: 40px; }
 
