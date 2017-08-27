@@ -15,3 +15,10 @@ branches:
 
 script:
   - ls -la
+
+after_success: bash ./bin/deploy.sh
+
+env:
+  global:
+  - GH_REF: github.com/d-kusk/hugo-gentoo-theme.git
+  - secure: "RZS10yDojcyadu63Ccuh4Xie2UknLeAAqegRWnhfB1Q2xR+M++dbW6Y2JmxsiSLrTXvjGUtAJUuW+IdsM3QBb3ruaGfTX9YWeIViHOJMFRWcIkxu/kmN/UjYly3+FfdLeLWq5kq0bdRV679CoEAmLSkW1ZBvzynMLSFAhn3Iq+dQF7VkureK475j3CgjxB88oTrI7BE1Onzh+HwgQbqj0EY4yuYN25H3y4c8aAL6wKyQdTd6UKSueRampbAG416/FSPnHWwT7axcBz0edyOt+dXekond8uPXAy6dKtTKw0kGs/rIUNcnH3Iz+wDxzRDM64zZU/8RyxdMY8faMYL9n2C1ByMrJvpchmNCkVp4U+bxRV9HjQyS1uzTp/GEfZ/ELB4NotEgfk2m65ky9c+WA3aRKnFvEd7FdJyd9mihQiErrN8u0vHVIZ5nt7bc0pOHDTfHwc8EZD4B0nFWG5FY+lHCMK+So0Ilmo4RBOAsaxABuHBbMeKU9Y8Zs6OHFer/jVDs1mramThyKahFajnicBwe0Vc6eiNLcJpB05gYVNTQ0XpbWJbLYOznsiCq8I9sh3waErNIGiiGwrO9YoZv6sgPET7Ndo0K2T7ABNrlqQbd3EWk+90HltA/3SQD90uXkjgshTLEoHRImqaMcC3qfP9SJxhdw2GuHWAD/dZOiww="
