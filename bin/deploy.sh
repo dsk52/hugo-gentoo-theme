@@ -13,7 +13,8 @@ fi
 rm -rf .git
 rm -r .gitignore
 
-echo ".editorconfig
+echo ".bowerrc
+.editorconfig
 .travis.yml
 .gitignore
 .babelrc
@@ -22,6 +23,7 @@ bin
 gulpfile.babel.js
 config.js
 node_modules
+content
 package.json
 src
 config.toml
@@ -34,4 +36,4 @@ git config user.name "Travis CI"
 git config user.email "travis@example.com"
 git add .
 git commit --quiet -m "Deploy from travis"
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" develop:release > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master > /dev/null 2>&1
