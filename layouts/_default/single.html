@@ -30,6 +30,21 @@
     <footer class="post-footer">
       <!-- /.social -->
       <div class="share"></div>
+
+      <div class="pagenation">
+        <ul class="pagenation-list">
+          {{ if .PrevInSection }}
+          <li class="pager previous">
+            <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
+          </li>
+          {{ end }}
+          {{ if .NextInSection }}
+          <li class="pager next">
+            <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
     </footer>
   </article><!-- /.post -->
 

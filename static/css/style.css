@@ -7065,6 +7065,11 @@ label.panel-block {
 body {
   background-color: #eaeaea; }
 
+.pagenation-list::after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .navbar-item {
   transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
 
@@ -7087,24 +7092,24 @@ body {
 .archive-header + .archive-body {
   margin-top: 3.5rem; }
 
-.pagination {
+.pagenation {
   margin-top: 40px; }
 
-.pagination-list {
+.pagenation-list {
   display: block;
   text-align: center; }
-  .pagination-list .pager {
+  .pagenation-list .pager {
     width: 25%;
     display: inline; }
-    .pagination-list .pager a {
+    .pagenation-list .pager a {
       color: #363636;
       transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-      .pagination-list .pager a:hover {
+      .pagenation-list .pager a:hover {
         color: #d84817; }
-  .pagination-list .next {
+  .pagenation-list .next {
     text-align: right;
     float: right; }
-  .pagination-list .previous {
+  .pagenation-list .previous {
     text-align: left;
     float: left; }
 

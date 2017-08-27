@@ -1,10 +1,11 @@
-.pagination {
+.pagenation {
   margin-top: 40px;
 }
 
-.pagination-list {
+.pagenation-list {
   display: block;
   text-align: center;
+  @extend %clearfix;
 
   .pager {
     width: 25%;
