@@ -3,11 +3,11 @@
 
 name = "Hugo Gentoo Theme"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/d-kusk/hugo-gentoo-theme/blob/master/LICENSE.md"
 description = "It is the theme of Hugo. Created by imagining the Gentoo penguin."
-homepage = "http://siteforthistheme.com/"
-tags = [simple, ]
-features = [Google Analytics]
+homepage = ""
+tags = ["blog", "responsive"]
+features = ["blog", "themes", "responsive", "Google Analytics"]
 min_version = 0.19
 
 [author]
@@ -18,7 +18,7 @@ min_version = 0.19
 [original]
   name = "Gentoo"
   homepage = ""
-  repo = ""
+  repo = "https://github.com/d-kusk/hugo-gentoo-theme/"
 
 [params]
   dateformat = "Jan 2, 2006" # Optional
