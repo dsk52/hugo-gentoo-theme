@@ -4,5 +4,15 @@
   .container {
     max-width: $document-width;
     width: 100%;
+
+    @include tablet() {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    @include mobile() {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }

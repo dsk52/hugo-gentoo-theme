@@ -7227,6 +7227,14 @@ body {
   .main-content .container {
     max-width: 864px;
     width: 100%; }
+    @media screen and (min-width: 769px), print {
+      .main-content .container {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media screen and (max-width: 768px) {
+      .main-content .container {
+        padding-left: 15px;
+        padding-right: 15px; } }
 
 .gfooter {
   padding: 14px 0;
