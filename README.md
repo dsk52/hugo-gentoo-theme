@@ -18,22 +18,7 @@ $ git clone https://github.com/d-kusk/hugo-gentoo-theme.git
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
 ## Setting
-Write it in `` config.toml`` in the root directory of the Hugo site.
-
-```
-baseurl = "Your Public Page URL"
-title = "Your Site Name"
-author = "Your Name"
-copyright = "(c) 2017 Your Site Name"
-canonifyurls = true
-paginate = 3
-
-googleAnalytics = "Yout Google Analytics ID"
-
-[params]
-  description = "Your Site's Description."
-  author = "Your Name"
-```
+Read to [wiki](https://github.com/d-kusk/hugo-gentoo-theme/wiki/Write-settings-to-config.toml) for setting to config.toml.
 
 ## Preview your site locally
 Use Hugo’s built-in server to see your site in action as you make changes.
