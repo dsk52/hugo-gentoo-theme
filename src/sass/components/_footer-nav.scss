@@ -1,0 +1,22 @@
+.footer-nav {
+  @extend %clearfix;
+  display: inline;
+  text-align: right;
+
+  .inner {
+    float: right;
+  }
+
+  &-item {
+    display: inline-block;
+    color: $color-secondary;
+
+    & + & {
+      margin-left: 1em;
+    }
+
+    &:hover {
+      color: darken($color-secondary, 15%);
+    }
+  }
+}
