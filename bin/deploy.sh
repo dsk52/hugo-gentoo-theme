@@ -16,14 +16,15 @@ rm -r .gitignore
 echo ".editorconfig
 .travis.yml
 .gitignore
+bin
 .babelrc
 webpack.config.babel.js
-bin
 gulpfile.babel.js
 config.js
 node_modules
 tasks
 package.json
+images
 src
 config.toml
 !/exampleSite/config.toml
