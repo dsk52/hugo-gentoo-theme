@@ -5,7 +5,7 @@ name = "Hugo Gentoo Theme"
 license = "MIT"
 licenselink = "https://github.com/d-kusk/hugo-gentoo-theme/blob/master/LICENSE.md"
 description = "It is the theme of Hugo. Created by imagining the Gentoo penguin."
-homepage = ""
+homepage = "https://github.com/d-kusk/hugo-gentoo-theme"
 tags = ["blog", "responsive"]
 features = ["blog", "themes", "responsive", "Google Analytics"]
 min_version = 0.19
@@ -17,7 +17,7 @@ min_version = 0.19
 # If porting an existing theme
 [original]
   name = "Gentoo"
-  homepage = ""
+  homepage = "https://github.com/d-kusk/hugo-gentoo-theme/"
   repo = "https://github.com/d-kusk/hugo-gentoo-theme/"
 
 [params]

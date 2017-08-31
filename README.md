@@ -10,8 +10,8 @@ This theme has a motif of Gentoo penguin.
 ## Feature
 
 - Responsive Design
-- Support for Tags
-- Support for some json-ld
+- Support for tags and categories
+- Support for some JSON-LD
 - Analysis with Google Analytics
 
 ## Get the Theme
@@ -24,7 +24,7 @@ $ git clone https://github.com/d-kusk/hugo-gentoo-theme.git
 
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
-## Setting
+## Setting config.toml
 Read to [wiki](https://github.com/d-kusk/hugo-gentoo-theme/wiki/Write-settings-to-config.toml) for setting to config.toml.
 
 ## Preview your site locally
