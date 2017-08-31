@@ -1,0 +1,35 @@
+baseurl = "Your Site URL"
+languageCode = "Your language code"
+title = "Your Site Name"
+copyright = "Your Site copyright"
+canonifyurls = true
+paginate = 3
+
+googleAnalytics = "Yout Google Analytics ID"
+
+[params]
+  description = "Your site description"
+  author = "Your Name"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+
+[[menu.global]]
+    name = "CategoryA"
+    url = "/categories/cata/"
+
+[[menu.global]]
+    name = "CategoryB"
+    url = "/categories/catb/"
+
+[[menu.footer]]
+    name = "About"
+    url = "/page/about/"
+
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
