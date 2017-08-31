@@ -24,7 +24,6 @@ config.js
 node_modules
 tasks
 package.json
-images
 src
 config.toml
 !/exampleSite/config.toml
