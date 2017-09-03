@@ -1,0 +1,28 @@
+.taxonomy {
+  min-height: 200px;
+
+  &-list {
+    text-align: left;
+
+    &-item {
+      display: inline-block;
+
+      & + & {
+        margin-left: 2em;
+      }
+
+      a {
+        color: $color-primary;
+
+        &:hover {
+          color: $color-accent;
+        }
+      }
+
+      > span {
+        margin-left: 0.4em;
+        color: lighten($color-font-base, 20%);
+      }
+    }
+  }
+}
