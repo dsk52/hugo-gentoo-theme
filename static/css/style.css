@@ -7250,6 +7250,22 @@ body {
     .post-body a:hover {
       text-decoration: underline; }
 
+.taxonomy {
+  min-height: 200px; }
+  .taxonomy-list {
+    text-align: left; }
+    .taxonomy-list-item {
+      display: inline-block; }
+      .taxonomy-list-item + .taxonomy-list-item {
+        margin-left: 2em; }
+      .taxonomy-list-item a {
+        color: #2d2d2d; }
+        .taxonomy-list-item a:hover {
+          color: #d84817; }
+      .taxonomy-list-item > span {
+        margin-left: 0.4em;
+        color: dimgray; }
+
 .main-content {
   margin: 60px 0; }
   .main-content .container {
