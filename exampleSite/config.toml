@@ -15,14 +15,13 @@ googleAnalytics = "Yout Google Analytics ID"
   category = "categories"
   tag = "tags"
 
+[[menu.global]]
+    name = "Categories"
+    url = "/categories/"
 
 [[menu.global]]
-    name = "CategoryA"
-    url = "/categories/cata/"
-
-[[menu.global]]
-    name = "CategoryB"
-    url = "/categories/catb/"
+    name = "Tags"
+    url = "/tags/"
 
 [[menu.footer]]
     name = "About"
