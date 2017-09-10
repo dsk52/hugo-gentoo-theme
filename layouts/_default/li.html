@@ -1,0 +1,19 @@
+<article class="post-item">
+  <p class="title">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </p>
+  <footer class="meta">
+    <time class="pub-time"  datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+      {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
+    </time>
+    <div class="terms">
+      {{ if .Params.tags }}
+      <div class="tag">
+        {{ range .Params.tags }}
+          <a class="tag-item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </footer>
+</article>

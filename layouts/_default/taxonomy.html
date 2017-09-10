@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}jp{{ end }}">
+  <meta name="robots" content="noindex, follow">
+
+  {{ partial "head.html" . }}
+
+  <body class="is-txonomy">
+    {{ partial "header" . }}
+
+    <div class="main-content">
+      <div class="container">
+        <div class="archive">
+          <header class="archive-header">
+            <h2 class="title">「{{ .Title }}」 List</h2>
+          </header>
+          <div class="archive-body">
+            {{ range .Data.Pages }}
+              {{ .Render "li" }}
+            {{ end }}
+          </div>
+        </div>
+
+        {{ partial "pagination" . }}
+      </div>
+    </div>
+
+    {{ partial "footer" . }}
+  </body>
+</html>
