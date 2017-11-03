@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}jp{{ end }}">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
   <meta name="robots" content="noindex, follow">
 
   {{ partial "head.html" . }}
@@ -11,7 +11,7 @@
       <div class="container">
         <div class="archive">
           <header class="archive-header">
-            <h2 class="title">「{{ .Title }}」 List</h2>
+            <h2 class="title">{{ .Title }} 列表</h2>
           </header>
           <div class="archive-body">
             {{ range .Data.Pages }}

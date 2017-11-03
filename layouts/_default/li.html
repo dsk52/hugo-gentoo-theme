@@ -7,11 +7,18 @@
       {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
     </time>
     <div class="terms">
+      {{ if .Params.categories }}
+      <div class="categories">
+      {{ range .Params.categories }}
+      <a class="categories-item" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">@{{ . }}</a>
+      {{ end }}
+      </div>
+      {{ end }}
       {{ if .Params.tags }}
       <div class="tag">
-        {{ range .Params.tags }}
-          <a class="tag-item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
+      {{ range .Params.tags }}
+      <a class="tag-item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+      {{ end }}
       </div>
       {{ end }}
     </div>
