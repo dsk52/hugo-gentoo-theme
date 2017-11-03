@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}jp{{ end }}">
 <head>
+
+  <link rel="stylesheet" href="{{ "css/code-highlight.css" | absURL }}">
+  <script src="{{ "js/code-highlight.js" | absURL }}"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
