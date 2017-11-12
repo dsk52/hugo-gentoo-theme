@@ -95,8 +95,10 @@
     color: $color-secondary;
   }
 
-  code {
-    font-family: $font-en;
+  pre, code {
+    font-family: Monaco, Consolas, 'Courier New', Courier, Monaco, monospace;
+    font-size: 1em;
+    line-height: 1.2;
   }
 
   a {

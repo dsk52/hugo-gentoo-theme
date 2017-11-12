@@ -7244,8 +7244,10 @@ body {
     background-color: #363636;
     margin: 2.8em 0;
     color: #eaeaea; }
-  .post-body code {
-    font-family: "Lato", sans-serif; }
+  .post-body pre, .post-body code {
+    font-family: Monaco, Consolas, 'Courier New', Courier, Monaco, monospace;
+    font-size: 1em;
+    line-height: 1.2; }
   .post-body a {
     font-weight: 400;
     color: #d84817; }
