@@ -1,0 +1,58 @@
+{{ define "main" }}
+  <article class="post">
+    <header class="post-header">
+      <h1 class="title">{{ .Title }}</h1>
+      <div class="meta">
+        <time class="pub-time"  datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+          {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
+        </time>
+        <div class="terms">
+          {{ if .Params.categories }}
+          <div class="categories">
+            {{ range .Params.categories }}
+              <a class="categories-item" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+          {{ if .Params.tags }}
+          <div class="tag">
+            {{ range .Params.tags }}
+              <a class="tag-item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </header>
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+    <footer class="post-footer">
+      <!-- /.social -->
+      <div class="share">
+        {{ partial "share.html" }}
+      </div>
+
+      <div class="pagenation">
+        <ul class="pagenation-list">
+          {{ if .PrevInSection }}
+          <li class="pager previous">
+            <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
+          </li>
+          {{ end }}
+          {{ if .NextInSection }}
+          <li class="pager next">
+            <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </footer>
+  </article><!-- /.post -->
+
+  <!--/.related -->
+  <article class="related"></article>
+
+  {{ partial "json-single.html" . }}
+  {{ partial "json-author.html" . }}
+{{ end }}

@@ -1,0 +1,16 @@
+<div class="pagenation">
+  {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+  <ul class="pagenation-list">
+    {{ if .Paginator.HasPrev }}
+    <li class="pager previous">
+      <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
+    </li>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+    <li class="pager next">
+      <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div><!-- /.pagenation -->

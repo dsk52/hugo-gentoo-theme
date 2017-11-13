@@ -1,0 +1,25 @@
+<footer class="gfooter">
+  <div class="inner">
+    <div class="container">
+      <p class="copy"><small>{{ .Site.Copyright }}</small></p>
+
+      <nav class="footer-nav">
+        <div class="inner">
+          {{ range .Site.Menus.footer }}
+          <a class="footer-nav-item" href="{{ .URL }}">
+            {{ .Name }}
+          </a>
+          {{ end }}
+        </div>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+{{ template "_internal/google_analytics.html" . }}
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="{{ "js/script.js" | absURL }}"></script>
