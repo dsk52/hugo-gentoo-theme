@@ -8,11 +8,11 @@ description = "It is the theme of Hugo. Created by imagining the Gentoo penguin.
 homepage = "https://github.com/d-kusk/hugo-gentoo-theme"
 tags = ["blog", "responsive"]
 features = ["blog", "themes", "responsive", "Google Analytics"]
-min_version = 0.19
+min_version = 0.53
 
 [author]
   name = "Daisuke Konishi"
-  homepage = "https://blog.daisukekonishi.com"
+  homepage = "https://daisukekonishi.com"
 
 # If porting an existing theme
 [original]

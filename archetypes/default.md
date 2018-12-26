@@ -5,4 +5,5 @@ data = {{ .Date }}
 tags = ["", ""]
 categories = [""]
 draft = true
+image = ""
 +++
