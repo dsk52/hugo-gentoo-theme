@@ -35,4 +35,7 @@ git config user.name "Travis CI"
 git config user.email "travis@example.com"
 git add .
 git commit --quiet -m "Deploy from travis"
+git log
+
+echo "git push"
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master > /dev/null 2>&1
