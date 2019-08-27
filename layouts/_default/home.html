@@ -1,9 +1,7 @@
 {{ define "main" }}
-  {{ $pages := .Pages }}
-  {{ $paginator := .Paginate $pages }}
-
+  {{ $pages := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 6 }}
   <div class="archive-body">
-    {{ range $pages }}
+    {{ range $pages.Pages }}
       {{ .Render "li" }}
     {{ end }}
   </div>

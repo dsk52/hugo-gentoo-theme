@@ -8,7 +8,7 @@ description = "It is the theme of Hugo. Created by imagining the Gentoo penguin.
 homepage = "https://github.com/d-kusk/hugo-gentoo-theme"
 tags = ["blog", "responsive"]
 features = ["blog", "themes", "responsive", "Google Analytics"]
-min_version = 0.53
+min_version = 0.57.2
 
 [author]
   name = "Daisuke Konishi"
