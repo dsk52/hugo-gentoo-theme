@@ -11,11 +11,6 @@
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/opengraph.html" . }}
 
-  {{ "<!-- RSS autodiscovery -->" | safeHTML }} {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-  {{ end }}
-
   {{ template "_internal/schema.html" . }}
   <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
